@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 50vh;
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #ccc;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#adicionar{
+   text-align: center;
+   margin-bottom: 15px;
+}
+#texto{
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+#btn-adicionar{
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 195, 255, 0.192);
+    border: 1px solid rgba(0, 195, 255);
+}
+#btn-adicionar:hover{
+    cursor: pointer;
+    background-color: rgba(0, 195, 255, 0.700);
+    color: #fff;
+}
+
+.task-item{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.task-item label{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
